@@ -1,0 +1,13 @@
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    left: 36px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    color: #01579B;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 300ms;
+}

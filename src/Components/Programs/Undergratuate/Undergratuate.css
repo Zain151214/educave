@@ -1,0 +1,57 @@
+.undergratuate-section{
+    padding: 190px 120px 0;
+}
+
+.undergratuate-section h1{
+    text-align: center;
+    font-size: 48px;
+    color: #01579B;
+    margin-bottom: 24px;
+}
+
+.undergratuate-section p{
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+.undergratuate-card-container{  
+    padding: 60px 0;    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.undergratute-card{
+    box-shadow: 0px 5px 40px 10px rgba(1, 87, 155, 0.1);
+    border: 4px solid transparent;
+    width: 215px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 60px 22px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.undergratute-card:hover{
+    border: 4px solid #01579B;
+}
+
+.start{
+    margin-top: 120px;
+    /* justify-self: start; */
+
+}
+
+.undergratuate-section-card-logo{
+    margin: 60px 55px 80px;
+}
+
+.undergratuate-section-card-heading span{
+    color: #01579B;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    
+}

@@ -1,0 +1,10 @@
+.msg-button-container{
+    position: fixed;
+    bottom: 8px;
+    right: 120px;
+}
+
+.msg-button-container img{
+    position: relative;
+    cursor: pointer;
+}

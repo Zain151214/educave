@@ -1,0 +1,40 @@
+.programs-hero-section{
+    /* border: 2px solid red; */
+    padding: 200px 120px 180px;
+    height: 100vh;
+    display: flex;
+}
+
+.programs-hero-section .programs-content{
+    /* border: 2px solid blue; */
+    width: 60%;
+
+}
+
+.programs-content .hero-section-heading{
+    /* border: 2px solid red; */
+    font-size: 48px;
+    color: #000000;
+}
+
+.hero-section-heading span{
+    font-size: 48px;
+}
+
+.programs-content p{
+    margin-top: 24px;
+}
+
+.programs-hero-section .programs-image{
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 50vh;
+    /* margin-left: 100px; */
+    padding-left: 210px;
+}
+
+.programs-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

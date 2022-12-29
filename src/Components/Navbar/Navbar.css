@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #8D8D8D;
+    font-size: 16px;
+}
+
+/* box-shadow: 0 10px 50px 30px rgba(0,0,0,.05); */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #ffffff;
+    padding: 45px 120px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.1s;
+    box-shadow: 0 1px 40px 30px rgba(1, 87, 155, 0.1);
+    border-bottom: 1px solid #01579B;
+}
+
+/* .show{
+    background-color: #ffffff;
+    box-shadow: 0 10px 50px 30px rgba(217, 243, 255, 0.5); 
+} */
+
+.front-headline-container {
+    background-color: #01579B;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0px 120px;
+    z-index: 11;
+}
+
+.headline-static-text {
+    width: 60%;
+    border-right: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.headline-static-text p {
+    margin: 8px 24px 8px 0;
+    display: flex;
+    color: #ffffff;
+}
+
+.headline-static-text p img {
+    margin-right: 8px;
+    margin-top: 2px;
+    height: 16px;
+    width: 16px;
+}
+
+.nav-mobile-only {
+    display: none;
+}
+
+.headline-dynamic-text {
+    color: #ffff;
+}
+
+nav .logo {
+    margin-top: 8px;
+}
+
+nav ul {
+    position: relative;
+    margin-top: 10px;
+    
+}
+
+.ul-show-for-desktop {
+    display: block;
+}
+
+.ul-show-for-mobile{
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.cross {
+    display: none;
+}
+
+.hamburger-icons{
+    display: none;
+
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 45px;
+    color: #00B0FF;
+}
+
+nav ul li a:hover {
+    color: #01579B;
+}
+
+nav ul li .active {
+    color: #01579B;
+}
+
+nav ul li button {
+    padding: 6px 27px;
+    border-radius: 20px;
+    border: 1px solid #00B0FF;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+nav ul li .login-button {
+    background-color: #ffffff;
+    color: #00B0FF;
+    margin-right: 16px;
+}
+
+.login-button:hover {
+    background-color: #00B0FF;
+    border: 1px solid #00B0FF;
+    transition: 300ms ease-in-out;
+    color: #ffffff;
+}
+
+nav ul li .signup-button {
+    background-color: #00B0FF;
+    color: white;
+}
+
+.signup-button:hover {
+    background-color: #ffffff;
+    border: 1px solid #00B0FF;
+    transition: 300ms ease-in-out;
+    color: #00B0FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------Media Query for Mobiles ------------ */
+
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        /* border: 2px solid red; */
+        padding: 5px 30px;
+        width: 100vw;
+    }
+
+    .front-headline-container {
+        display: none;
+
+    }
+
+    nav .logo {
+        /* border: 2px solid red; */
+        margin: 0px;
+        height: 40px;
+        width: 60px;
+
+    }
+
+    nav ul {
+        /* border: 2px solid red; */
+        margin-top: 0px;
+    }
+
+    .ul-show-for-desktop {
+        display: none;      
+    }
+
+    .hamburger {
+        display: block;
+        color: #8D8D8D;
+    }
+
+    
+
+    .hamburger-icons{
+        
+        font-size: 50px;
+        display: block;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .cross {
+        margin-left: 10px;
+    }
+
+    .mobile-sidebar{
+        /* border: 2px solid blue; */
+        border-left: 0.5px solid #01579B;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        z-index: 11;
+        height: 100vh;
+        width: 50%;
+        background-color: #ffffff;
+    }
+
+    .ul-show-for-mobile{
+        /* border: 2px solid blue; */
+        list-style-type: none;
+        display: block;
+        position: absolute;
+        top: 8%;
+        right: 30%;
+        /* z-index: 10; */
+        
+    }
+
+    .ul-show-for-mobile li{
+        /* border: 2px solid red; */
+        margin: 10px 0 ;
+        
+    }
+
+    .ul-show-for-mobile li a{
+        font-size: 24px;
+        color: #00B0FF;
+    }
+
+    ul li .active {
+        color: #01579B;
+    }
+
+    .ul-show-for-mobile button{
+        font-size: 20px;
+        border: 2px solid #00B0FF;
+        outline: none;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 6px 20px;
+        color: #00B0FF;
+        text-align: center;
+    }
+
+    .ul-show-for-mobile .login-button{
+        padding: 6px 28px;
+        text-align: center;
+    }
+
+    .ul-show-for-mobile .signup-button{
+        background-color: #00B0FF;
+        color: #ffffff;
+    }
+}
